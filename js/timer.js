@@ -8,6 +8,7 @@ class CountdownTimer {
       mins: timerDiv.querySelector('span[data-value="mins"]'),
       secs: timerDiv.querySelector('span[data-value="secs"]'),
     };
+    this.start();
   }
 
   update() {
@@ -56,4 +57,4 @@ const timer = new CountdownTimer({
   targetDate: new Date("May 16, 2023"),
 });
 
-timer.start();
+
